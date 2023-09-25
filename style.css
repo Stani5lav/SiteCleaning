@@ -615,6 +615,7 @@ section.bg-grey {
     align-items: center;
     width: 360px;
     padding: 0;
+    margin-bottom: 40px;
 }
 
 .section-3 .privilege .icon {
