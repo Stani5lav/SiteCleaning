@@ -1,0 +1,466 @@
+@media screen and (max-width: 1280px) {
+
+    header {
+        width: 768px;
+    }
+
+    .container {
+        width: 690px;
+    }
+
+
+    /**
+    SECTION 1
+    */
+
+    .section-1.bg-grey {
+        padding: 72px 40px;
+        background-color: #f4f4f8 !important;
+    }
+
+    .section-1 p {
+        font-size: 16px;
+    }
+
+    .section-1 .main-info {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .section-1 .people {
+        position: relative;
+        left: 0;
+        width: auto;
+        width: 100%;
+
+    }
+
+    .section-1 h1 {
+        font-size: 36px;
+        width: 60%;
+    }
+
+    .section-1 .main-info .col {
+        width: 100%;
+    }
+
+    .section-1 .btn {
+        margin-top: 24px;
+    }
+
+    .section-1 .privilege {
+        flex-wrap: wrap;
+    }
+
+    .section-1 .privilege .col {
+        width: 50%;
+    }
+
+    /**
+    SECTION 2
+    */
+
+    .section-2 {
+        padding: 72px 39px;
+    }
+
+    .section-2 h2 {
+        font-size: 32px;
+    }
+
+    .section-2 h3 {
+        font-size: 20px;
+    }
+
+    .section-2 .cols {
+        margin-bottom: 72px;
+    }
+
+    .section-2 .col {
+        margin-bottom: 0;
+    }
+
+    .section-2 .col p {
+        font-size: 16px;
+    }
+
+    .section-2 .col .number {
+        font-size: 24px;
+    }
+
+    /**
+    SECTION 3
+    */
+
+    .section-3.bg-grey {
+        padding: 72px 32px 72px 60px;
+        margin: 0 auto;
+    }
+
+
+    .section-3 h1 {
+        font-size: 36px !important;
+    }
+
+    .section-3 h2 {
+        font-size: 32px;
+    }
+
+    .section-3 h3 {
+        font-size: 28px !important;
+    }
+
+    .section-3 p {
+        font-size: 16px !important;
+    }
+
+    .section-3 .pack-title p {
+        margin: 0 100px 48px;
+    }
+
+    .section-3 .subscription {
+        display: block !important;
+    }
+
+    .section-3 .col-1,
+    .section-3 .col-2 {
+        width: 100%;
+    }
+
+    .section-3 .bonus {
+        flex-wrap: wrap;
+    }
+
+    .section-3 .banner {
+        justify-content: space-evenly;
+        margin: 32px 0 72px;
+    }
+
+    .section-3 .banner h3 {
+        width: 100%;
+    }
+
+    .section-3 .banner img {
+        margin-right: 35px;
+        margin-left: 0;
+        width: 35%;
+    }
+
+    .section-3 li {
+        font-size: 16px !important;
+    }
+
+    .section-3 .privilege {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-3 .privilege .col {
+        width: 40% !important;
+        margin: 3%;
+    }
+
+    .section-3 .privilege .col h2 {
+        font-size: 20px;
+    }
+
+    .section-3 .btn {
+        font-size: 16px;
+        margin: 24px auto 0 !important;
+    }
+
+
+    /**
+    SECTION 4
+    */
+
+    .section-4 {
+        padding: 72px 32px 72px 60px;
+        margin: 0 auto;
+    }
+
+    .section-4 .cols {
+        column-count: 2;
+        margin-top: 48px;
+        margin-bottom: 56px;
+    }
+
+    .section-4 h2 {
+        font-size: 32px;
+    }
+
+    .section-4 .container .cols .col h3 {
+        font-size: 20px;
+    }
+
+    .section-4 .container .cols .col p {
+        font-size: 16px;
+    }
+
+    .section-4 .btn-google,
+    .section-4 .btn-facebook {
+        font-size: 16px;
+    }
+
+    /**
+    SECTION 5
+    */
+
+    .section-5.bg-grey {
+        padding: 72px 39px 0 39px;
+        background-color: #f4f4f8;
+    }
+
+    .section-5 .content {
+        padding: 72px 30px;
+    }
+
+    .section-5 h2 {
+        font-size: 32px;
+    }
+
+    .section-5 h3 {
+        font-size: 20px;
+    }
+
+    .section-5 .number {
+        font-size: 24px;
+    }
+
+    .section-5 p {
+        font-size: 16px;
+    }
+
+    .section-5 .btn {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .section-5 .content::after {
+        top: 77%;
+    }
+
+
+    /**
+    SECTION 6
+    */
+
+    .section-6.bg-grey {
+        padding: 72px 39px;
+        background-color: #f4f4f8;
+    }
+
+    .section-6 .container {
+        padding: 0;
+    }
+
+    .section-6 .qu-block {
+        padding: 72px 30px;
+    }
+
+    .section-6 h2 {
+        font-size: 32px;
+    }
+
+    .section-6 h3 {
+        font-size: 28px;
+    }
+
+    .section-6 h4 {
+        font-size: 20px;
+    }
+
+    .section-6 .que {
+        font-size: 22px;
+    }
+
+    .section-6 p,
+    .section-6 .btn,
+    .section-6 li {
+        font-size: 16px;
+    }
+
+    .section-6 .contacts-block {
+        padding: 72px 0;
+    }
+
+    .section-6 .contacts-block h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .section-6 .contacts-col-1 {
+        width: 184px;
+        padding: 40px o;
+    }
+
+    .section-6 .contacts-col-1 p,
+    .section-6 .contacts-col-1 .phone {
+        font-size: 16px;
+    }
+
+    .section-6 .contacts-col-2 {
+        width: 50%;
+    }
+
+    .section-6 .contacts-col-2 h3 {
+        font-size: 28px;
+        margin: 10px;
+    }
+
+    .section-6 li {
+        margin-bottom: 0;
+    }
+
+    .section-6 .contacts-col-2 .phone {
+        font-size: 20px;
+    }
+
+    .section-6 .adv-banner {
+        width: 690px;
+        height: 483px;
+        position: relative;
+        margin: auto;
+    }
+
+    .girl {
+        left: 0;
+    }
+
+    .girl img {
+        width: 234px;
+    }
+
+    .boy {
+        width: 120px;
+        overflow: hidden;
+        top: 135px;
+        left: 535px;
+    }
+
+    .boy img {
+        position: relative;
+        height: 333px;
+        top: 0px;
+        left: -100px;
+    }
+
+    element.style {
+        height: 341px;
+        position: relative;
+        left: -106px;
+    }
+
+    .section-6 .adv-banner .adv-content h3 {
+        font-size: 28px;
+        width: 72%;
+    }
+
+    .section-6 .adv-banner .adv-content h1 {
+        font-size: 36px;
+    }
+
+    .section-6 .adv-banner .adv-content p {
+        font-size: 16px;
+    }
+
+    .section-6 .adv-banner .adv-content .btn {
+        font-size: 16px;
+    }
+
+
+
+
+}
+
+/*================
+*
+*     PHONE
+*
+==================*/
+
+@media screen and (max-width: 500px) {
+    footer {
+        display: none;
+    }
+
+    header {
+        width: 375px;
+    }
+
+    .container {
+        width: 335px;
+    }
+
+
+    /**
+    SECTION 1
+    */
+
+    .section-1.bg-grey {
+        padding: 32px 20px;
+    }
+
+    .section-1 .main-info h1 {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .section-1 .main-info p {
+        width: 100%;
+    }
+
+    .section-1 .privilege {
+        flex-direction: column;
+    }
+
+    .section-1 .privilege h2 {
+        font-size: 20px;
+    }
+
+    .section-1 .privilege p {
+        font-size: 16px;
+    }
+
+    .section-1 .privilege .icon {
+        width: 117px;
+        height: 117px;
+        margin-bottom: 20px;
+    }
+
+    .section-1 .privilege .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section-1 .btn {
+        width: calc(100% - 52px);
+        text-align: center;
+    }
+
+    .section-1 .people {
+        margin-top: 20px;
+    }
+
+    /**
+    SECTION 2
+    */
+
+    .section-2 {
+        padding: 64px 20px;
+    }
+
+    .section-2 .flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-2 .col {
+        width: calc(100% - 88px);
+        padding: 20px;
+    }
+
+
+
+
+}
