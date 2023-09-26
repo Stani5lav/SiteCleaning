@@ -362,7 +362,7 @@ section.bg-grey {
     overflow: hidden;
 }
 
-.section-2 .flex {
+.section-2 .cols.flex {
     flex-wrap: wrap;
 }
 

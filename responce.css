@@ -15,7 +15,7 @@
 
     .section-1.bg-grey {
         padding: 72px 40px;
-        background-color: #f4f4f8 !important;
+        background: #f4f4f8;
     }
 
     .section-1 p {
@@ -97,7 +97,7 @@
 
     .section-3.bg-grey {
         padding: 72px 39px;
-        background-color: #f4f4f8 !important;
+        background: #f4f4f8 !important;
     }
 
 
@@ -226,7 +226,7 @@
 
     .section-5.bg-grey {
         padding: 72px 39px 0 39px;
-        background-color: #f4f4f8;
+        background: #f4f4f8;
     }
 
     .section-5 .content {
@@ -275,7 +275,7 @@
 
     .section-6.bg-grey {
         padding: 72px 39px;
-        background-color: #f4f4f8;
+        background: #f4f4f8;
     }
 
     .section-6 .container {
@@ -297,8 +297,6 @@
     .section-6 h4 {
         font-size: 20px;
     }
-
-
 
     .section-6 .acc .question .que {
         font-size: 22px;
@@ -485,15 +483,22 @@
         padding: 64px 20px;
     }
 
-    .section-2 .flex {
+    .section-2 .cols.flex {
         flex-direction: column;
-        width: 100%;
+        align-content: center;
     }
 
     .section-2 .col {
-        width: calc(100% - 88px);
-        padding: 20px;
+        width: calc(100% - 48px);
+        padding: 24px;
+        margin-bottom: 24px;
     }
+
+    .section-2 .btns {
+        margin-bottom: 24px;
+    }
+
+
 
 
 
