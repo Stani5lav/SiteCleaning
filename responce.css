@@ -97,7 +97,7 @@
 
     .section-3.bg-grey {
         padding: 72px 39px;
-        background: #f4f4f8 !important;
+        background: #f4f4f8;
     }
 
 
@@ -497,6 +497,101 @@
     .section-2 .btns {
         margin-bottom: 24px;
     }
+
+
+    /**
+    SECTION 3
+    */
+
+    .section-3 h2 {
+        font-size: 24px;
+    }
+
+
+    .section-3 .pack-title p {
+        margin: 0;
+    }
+
+    .section-3 .subscription {
+        padding: 32px 16px;
+    }
+
+
+    .section-3 h3 {
+        font-size: 24px;
+    }
+
+    .section-3 .col-1,
+    .section-3 .col-2 {
+        width: 100%;
+    }
+
+    .section-3 .col-2 p {
+        width: 303px;
+    }
+
+    .section-3 .bonus a {
+        font-size: 16px;
+        width: 230px;
+    }
+
+    .section-3 .col-2 .btn {
+        width: 303px;
+        padding: 18px 0;
+        margin: 24px auto 0;
+    }
+
+    .section-3 .banner.flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-3 .banner h3 {
+        font-size: 20px;
+        width: 286px;
+        padding: 0;
+    }
+
+    .section-3 .banner img {
+        margin: 0;
+        width: 50%;
+    }
+
+    .section-3 .init.flex {
+        flex-direction: column-reverse;
+    }
+
+    .section-3 .init img {
+        width: 100%;
+    }
+
+    .section-3 .init .help {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section-3 .init h3 {
+        font-size: 20px;
+    }
+
+    .section-3 .privilege.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-3 .privilege .col {
+        width: 100%;
+    }
+
+    .section-3 .privilege .icon {
+        margin-bottom: 20px;
+    }
+
+    .section-3 .privilege .col h2 {
+        margin: 0 auto;
+    }
+
+
 
 
 
