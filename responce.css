@@ -635,6 +635,39 @@
         margin: 8px auto;
     }
 
+    /**
+    SECTION 5
+    */
+
+    .section-5 {
+        padding: 64px 20px 0;
+    }
+
+    .section-5 h2 {
+        font-size: 24px;
+    }
+
+    .section-5 .content {
+        padding: 64px 16px;
+    }
+
+    .section-5 .col {
+        width: 100%;
+    }
+
+    .section-5 .content::before {
+        top: 44%;
+    }
+
+    .section-5 .content::after {
+        top: 87%;
+        left: -21px;
+    }
+
+
+
+
+
 
 
 
