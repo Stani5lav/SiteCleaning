@@ -401,6 +401,32 @@
         font-size: 16px;
     }
 
+    /*
+    *****
+    *Sidebar
+    *****
+    */
+
+    .sidebar-menu {
+        width: 60%;
+        right: -62%;
+    }
+
+    .sidebar-menu .sidebar-container {
+        width: 78%;
+        margin-left: 11%;
+    }
+
+    .sidebar-menu__contacts .social {
+        width: 120px;
+        height: 32px;
+    }
+
+    .sidebar-menu__contacts .social img {
+        width: 32px;
+        height: 32px;
+    }
+
 
 
 
@@ -760,7 +786,60 @@
     .section-6 .adv-banner .adv-content .btn {
         width: 299px;
         padding: 18px 0;
+    }
 
+    /*
+    *****
+    *Sidebar
+    *****
+    */
+
+    .sidebar-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .sidebar-menu .sidebar-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sidebar-menu__header {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar-menu__header #sidebarLogo {
+        display: block;
+    }
+
+    .sidebar-menu__header .sidebar-nav-switch {
+        display: flex;
+    }
+
+    .sidebar-menu__header #closeMenu {
+        margin: 0;
+    }
+
+    .sidebar-menu__navs {
+        margin: 60px 0 80px;
+    }
+
+    .sidebar-menu__navs a {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .sidebar-menu__contacts .social {
+        width: 120px;
+        height: 32px;
+    }
+
+    .sidebar-menu__contacts .social img {
+        width: 32px;
+        height: 32px;
     }
 
 

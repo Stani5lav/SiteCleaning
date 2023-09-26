@@ -1085,7 +1085,7 @@ section.bg-grey {
 
 .sidebar-menu {
     background: #4D1299;
-    width: 40%;
+    width: 45%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -1094,15 +1094,98 @@ section.bg-grey {
     transition: all 0.4s ease-out;
 }
 
+.sidebar-menu .sidebar-container {
+    margin-left: 15%;
+    width: 56%;
+}
+
 .sidebar-menu.opened {
     right: 0;
+    position: fixed;
+}
+
+.sidebar-menu__header {
+    margin-top: 40px;
+}
+
+.sidebar-menu__header #sidebarLogo {
+    display: none;
+}
+
+.sidebar-menu__header .sidebar-nav-switch {
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 5px 3px;
+    display: none;
+}
+
+.sidebar-menu__header .sidebar-nav-switch a {
+    font-weight: 600;
+    width: 54px;
+    text-align: center;
+    color: #FFF;
+    padding: 3px 0px 4px;
+    margin: 0 2px;
+    font-size: 14px;
+    background: #4D1299;
+    transition: all 0.3s ease-out;
+
+}
+
+.sidebar-menu__header .sidebar-nav-switch a.active,
+.sidebar-menu__header .sidebar-nav-switch a:hover {
+    background: #FFF;
+    color: #4D1299;
+    border-radius: 25px;
 }
 
 .sidebar-menu__header #closeMenu {
     display: block;
     width: fit-content;
+    margin: 0 0 0 auto;
 }
 
 .sidebar-menu__header #closeMenu img {
     width: 32px;
+}
+
+.sidebar-menu__navs {
+    margin: 90px 0;
+}
+
+.sidebar-menu__navs a:first-child {
+    margin-top: 0;
+}
+
+.sidebar-menu__navs a {
+    margin-top: 24px;
+    font-size: 36px;
+    color: #FFF;
+}
+
+.sidebar-menu__contacts {
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-menu__contacts .social {
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-menu__contacts a.phone {
+    padding: 17px 26px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4D1299;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+    background: #FFF;
 }
