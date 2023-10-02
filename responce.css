@@ -96,6 +96,95 @@
 
     }
 
+    .tooltip {
+        max-width: 160px;
+    }
+
+    .tooltip-content {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    /*
+    ========
+    =Slide 1 Kitchen
+    ========    
+    */
+
+    .slide-1 .tooltip-1 {
+        top: calc(95% - 68px);
+        left: 40%;
+    }
+
+    .slide-1 .tooltip-2 {
+        top: 47%;
+        left: 48%;
+    }
+
+    .slide-1 .tooltip-3 {
+        top: 38%;
+        left: 26%;
+    }
+
+    .slide-1 .tooltip-4 {
+        top: 44%;
+        left: 3%;
+    }
+
+
+    /*
+    ========
+    =Slide 2 Bedroom
+    ========    
+    */
+
+    .slide-2 .tooltip-1 {
+        top: calc(95% - 58px);
+        left: 61%;
+    }
+
+    .slide-2 .tooltip-2 {
+        top: 21%;
+        left: 70%;
+    }
+
+    .slide-2 .tooltip-3 {
+        top: 62%;
+        left: 72%;
+    }
+
+    .slide-2 .tooltip-4 {
+        top: 41%;
+        left: 50%;
+    }
+
+    /*
+    ========
+    =Slide 3 Bathroom
+    ========    
+    */
+
+    .slide-3 .tooltip-1 {
+        top: calc(95% - 220px);
+        left: 59%;
+    }
+
+    .slide-3 .tooltip-2 {
+        top: 45%;
+        left: 15%;
+    }
+
+    .slide-3 .tooltip-3 {
+        top: 23%;
+        left: 71%;
+    }
+
+    .slide-3 .tooltip-4 {
+        top: 34%;
+        left: 27%;
+    }
+
+
     /**
     SECTION 3
     */
@@ -531,6 +620,94 @@
 
     .section-2 .slider-nav li {
         font-size: 16px;
+    }
+
+    .tooltip {
+        max-width: 120px;
+    }
+
+    .tooltip-content {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+
+
+    /*
+    ========
+    =Slide 1 Kitchen
+    ========    
+    */
+
+    .slide-1 .tooltip-1 {
+        top: calc(95% - 53px);
+        left: 35%;
+    }
+
+    .slide-1 .tooltip-2 {
+        top: 40%;
+        left: 48%;
+    }
+
+    .slide-1 .tooltip-3 {
+        top: 26%;
+        left: 26%;
+    }
+
+    .slide-1 .tooltip-4 {
+        top: 40%;
+        left: 1%;
+    }
+
+    /*
+    ========
+    =Slide 2 Bedroom
+    ========    
+    */
+
+    .slide-2 .tooltip-1 {
+        top: calc(95% - 47px);
+        left: 52%;
+    }
+
+    .slide-2 .tooltip-2 {
+        top: 11%;
+        left: 64%;
+    }
+
+    .slide-2 .tooltip-3 {
+        top: 57%;
+        left: 70%;
+    }
+
+    .slide-2 .tooltip-4 {
+        top: 31%;
+        left: 40%;
+    }
+
+    /*
+    ========
+    =Slide 3 Bathroom
+    ========    
+    */
+
+    .slide-3 .tooltip-1 {
+        top: calc(95% - 92px);
+        left: 56%;
+    }
+
+    .slide-3 .tooltip-2 {
+        top: 41%;
+        left: 12%;
+    }
+
+    .slide-3 .tooltip-3 {
+        top: 7%;
+        left: 71%;
+    }
+
+    .slide-3 .tooltip-4 {
+        top: 31%;
+        left: 23%;
     }
 
 

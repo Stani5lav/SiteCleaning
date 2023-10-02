@@ -238,7 +238,6 @@ footer .link:hover {
 
 
 
-
 /*
 ============
 Home page
@@ -436,19 +435,145 @@ section.bg-grey {
     color: #FFF;
 }
 
-.slider-item {
+.section-2 .slider-item {
     display: none;
     position: relative;
 }
 
-.slider-item.active {
+.section-2 .slider-item.active {
     display: block;
 }
 
-.slider-item img {
+.section-2 .slider-item img {
     width: 100%;
     border-radius: 30px;
 }
+
+.tooltip {
+    max-width: 200px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.tooltip-icon {
+    width: 18px;
+    height: 18px;
+    background: #4D1299;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.tooltip-icon::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background: rgba(77, 18, 153, 0.3);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+.tooltip-icon svg {
+    width: 11px;
+    fill: #FFF;
+    z-index: 1;
+    position: relative;
+}
+
+.tooltip-content {
+    background: #FFF;
+    position: relative;
+    padding: 6px 10px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tooltip-content::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FFF;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 10px);
+}
+
+/*1111111*/
+.slide-1 .tooltip-1 {
+    top: calc(95% - 78px);
+    left: 30%;
+}
+
+.slide-1 .tooltip-2 {
+    top: 51%;
+    left: 50%;
+}
+
+.slide-1 .tooltip-3 {
+    top: 45%;
+    left: 30%;
+}
+
+.slide-1 .tooltip-4 {
+    top: 52%;
+    left: 6%;
+}
+
+/*2222222*/
+
+.slide-2 .tooltip-1 {
+    top: calc(95% - 58px);
+    left: 59%;
+}
+
+.slide-2 .tooltip-2 {
+    top: 49%;
+    left: 71%;
+}
+
+.slide-2 .tooltip-3 {
+    top: 64%;
+    left: 74%;
+}
+
+.slide-2 .tooltip-4 {
+    top: 45%;
+    left: 52%;
+}
+
+/*3333333*/
+
+.slide-3 .tooltip-1 {
+    top: calc(95% - 246px);
+    left: 59%;
+}
+
+.slide-3 .tooltip-2 {
+    top: 49%;
+    left: 17%;
+}
+
+.slide-3 .tooltip-3 {
+    top: 23%;
+    left: 71%;
+}
+
+.slide-3 .tooltip-4 {
+    top: 34%;
+    left: 30%;
+}
+
 
 /*
 *====================
