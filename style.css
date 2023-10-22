@@ -18,10 +18,7 @@ a {
     color: #1B1B1B;
 }
 
-header {
-    width: 1440px;
-    margin: 0 auto;
-}
+
 
 .container {
     width: 1160px;
@@ -83,9 +80,12 @@ header {
 HEADER
 ============
 */
+
 header {
     background: #F4F4F8;
     padding: 20px 0;
+    width: 1440px;
+    margin: 0 auto;
 
 }
 
@@ -150,9 +150,21 @@ header .phone,
     transition: all 0.3s ease-out;
 }
 
-header .phone:hover {
+header .phone:hover,
+.section-6 .contacts-col-1 .phone:hover {
     color: #FFF;
     background: #4D1299;
+}
+
+header .soc-icon {
+    width: 40px;
+    height: 40px;
+    background: #F4F4F8;
+    border-radius: 50px;
+}
+
+header .soc-icon:hover {
+    background: #FFF;
 }
 
 /*
@@ -200,13 +212,15 @@ footer .title-block {
     margin-bottom: 16px;
 }
 
-footer .nav-social a svg {
-    fill: #4D1299;
+footer .soc-icon {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
 }
 
-
-footer .nav-social a:hover svg {
-    fill: #FFF;
+footer .soc-icon:hover {
+    background: #F4F4F8;
 }
 
 .about-us,
@@ -809,7 +823,9 @@ section.bg-grey {
     padding-bottom: 0;
 }
 
-.section-3 .bottom .btn:hover {
+.section-3 .bottom .btn:hover,
+.section-5 .btn:hover,
+.section-6 .btn:hover {
     background: #FFF;
     color: #4D1299;
 }
@@ -986,9 +1002,6 @@ section.bg-grey {
     margin-bottom: 24px;
 }
 
-.section-6 .btn {
-    display: block;
-}
 
 
 /* 
@@ -1001,8 +1014,6 @@ section.bg-grey {
     overflow: hidden;
     padding: 116px 140px 164px;
 }
-
-
 
 .section-6 h2 {
     font-size: 46px;
@@ -1043,6 +1054,7 @@ section.bg-grey {
     margin: 64px 0 16px;
 }
 
+
 .section-6 .contacts-col-1 p {
     font-size: 18px;
     margin-bottom: 58px;
@@ -1050,6 +1062,16 @@ section.bg-grey {
 
 .section-6 .contacts-col-1 .nav-social {
     margin-top: 32px;
+}
+
+.section-6 .contacts-col-1 .nav-social .soc-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.section-6 .contacts-col-1 .nav-social .soc-icon:hover {
+    background: #FFF;
 }
 
 .section-6 .contacts-col-2 {
@@ -1070,6 +1092,16 @@ section.bg-grey {
     margin: 16px;
     line-height: 115%;
     width: 100%;
+}
+
+.section-6 .contacts-col-2 .nav-social .soc-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.section-6 .contacts-col-2 .nav-social .soc-icon:hover {
+    background: #E5E5E5;
 }
 
 
@@ -1156,6 +1188,12 @@ section.bg-grey {
     font-weight: 600;
     width: 321px;
     margin-top: 24px;
+}
+
+.section-6 .adv-banner .adv-content .btn:hover {
+    color: #FFF;
+    background: #4D1299;
+    border: 2px solid #F4F4F8;
 }
 
 .qu-block {
