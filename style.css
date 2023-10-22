@@ -912,7 +912,7 @@ section.bg-grey {
 
 .section-5 {
     overflow: hidden;
-    padding: 0 140px 116px;
+    padding: 0 140px;
 }
 
 .section-5 .container {
@@ -921,7 +921,7 @@ section.bg-grey {
 }
 
 .section-5 .content {
-    padding: 110px 60px 0;
+    padding: 116px 60px;
     position: relative;
     overflow: hidden;
 }
@@ -932,7 +932,7 @@ section.bg-grey {
     height: 140px;
     background: url(img/home/sponge.svg);
     position: absolute;
-    top: 43%;
+    top: 40%;
     right: -7px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -945,7 +945,7 @@ section.bg-grey {
     background: url(img/home/brush.svg);
     position: absolute;
     top: 73%;
-    left: 0px;
+    left: 10px;
     background-repeat: no-repeat;
     background-size: contain;
 }
