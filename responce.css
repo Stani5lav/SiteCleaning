@@ -1,20 +1,69 @@
 @media screen and (max-width: 1279px) {
 
-    header {
-        width: 768px;
-    }
-
     .container {
         width: 690px;
     }
 
+    footer .container {
+        flex-wrap: wrap;
+        padding-top: 60px;
+    }
+
+    .about-us,
+    .services,
+    .contacts,
+    .tech-support {
+        margin-top: 0;
+        margin-bottom: 40px;
+        height: min-content;
+    }
+
+    .tech-support {
+        margin-right: 30px;
+    }
+
+    footer .nav-social {
+        justify-content: flex-start;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p,
+    footer .phone,
+    footer .e-mail,
+    footer .address {
+        font-size: 16px;
+    }
+
+    footer .nav-social {
+        width: 125px;
+        height: 32px;
+        justify-content: space-between;
+    }
+
+    footer .soc-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    footer img {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .terms a {
+        font-size: 11px;
+    }
 
     /**
     SECTION 1
     */
 
     .section-1.bg-grey {
-        padding: 72px 40px;
+        padding: 72px 0;
         background: #f4f4f8;
     }
 
@@ -61,7 +110,7 @@
     */
 
     .section-2 {
-        padding: 72px 39px;
+        padding: 72px 0;
     }
 
     .section-2 h2 {
@@ -190,7 +239,7 @@
     */
 
     .section-3.bg-grey {
-        padding: 72px 39px;
+        padding: 72px 0;
         background: #f4f4f8;
     }
 
@@ -285,7 +334,7 @@
     */
 
     .section-4 {
-        padding: 72px 32px 72px 60px;
+        padding: 72px 0;
         margin: 0 auto;
     }
 
@@ -319,7 +368,7 @@
     */
 
     .section-5.bg-grey {
-        padding: 72px 39px 0 39px;
+        padding: 72px 0 0;
         background: #f4f4f8;
     }
 
@@ -368,7 +417,7 @@
     */
 
     .section-6.bg-grey {
-        padding: 72px 39px;
+        padding: 72px 0;
         background: #f4f4f8;
     }
 
@@ -533,13 +582,7 @@
 ==================*/
 
 @media screen and (max-width: 500px) {
-    footer {
-        display: none;
-    }
-
-    header {
-        width: 375px;
-    }
+    footer {}
 
     .container {
         width: 335px;
@@ -551,7 +594,7 @@
     */
 
     .section-1.bg-grey {
-        padding: 32px 20px;
+        padding: 32px 0;
     }
 
     .section-1 .main-info h1 {
@@ -600,7 +643,7 @@
     */
 
     .section-2 {
-        padding: 64px 20px;
+        padding: 64px 0;
     }
 
     .section-2 .cols.flex {
@@ -808,7 +851,7 @@
     */
 
     .section-4 {
-        padding: 64px 20px;
+        padding: 64px 0;
     }
 
     .section-4 h2 {
@@ -852,7 +895,7 @@
     */
 
     .section-5 {
-        padding: 64px 20px 0;
+        padding: 64px 0 0;
     }
 
     .section-5 h2 {
@@ -881,7 +924,7 @@
     */
 
     .section-6 {
-        padding: 64px 20px;
+        padding: 64px 0;
     }
 
     .section-6 h2 {

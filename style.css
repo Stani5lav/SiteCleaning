@@ -4,6 +4,10 @@ body {
     color: #1B1B1B;
 }
 
+main {
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -39,6 +43,10 @@ a {
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-normal {
+    justify-content: normal;
 }
 
 .items-center {
@@ -84,8 +92,8 @@ HEADER
 header {
     background: #F4F4F8;
     padding: 20px 0;
-    width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 
 }
 
@@ -116,7 +124,6 @@ header .nav-switch a {
     padding: 3px 0px 4px;
     margin: 0 2px;
     font-size: 14px;
-    background: #FFF;
     transition: all 0.3s ease-out;
 
 }
@@ -205,7 +212,7 @@ footer p {
     margin-top: 8px;
 }
 
-footer .title-block {
+footer h3 {
     font-size: 20px;
     font-family: 'Open Sans';
     font-weight: 600;
@@ -271,6 +278,8 @@ section.bg-grey {
     background: #E5E5E5;
 }
 
+section {}
+
 /*
 *==================
 *Section-1
@@ -278,8 +287,8 @@ section.bg-grey {
 */
 
 .section-1 {
-    padding: 116px 140px;
-    overflow: hidden;
+    padding: 116px 0;
+    /* overflow: hidden; */
     box-shadow: inset 0px 30px 15px 0px rgba(229, 229, 229, 1);
 }
 
@@ -370,7 +379,7 @@ section.bg-grey {
 */
 
 .section-2 {
-    padding: 116px 140px;
+    padding: 116px 0;
     margin: 0;
     overflow: hidden;
 }
@@ -597,7 +606,7 @@ section.bg-grey {
 
 .section-3 {
     overflow: hidden;
-    padding: 116px 140px 340px 140px;
+    padding: 116px 0 340px;
 }
 
 .section-3 h2 {
@@ -838,7 +847,7 @@ section.bg-grey {
 
 .section-4 {
     overflow: hidden;
-    padding: 116px 140px;
+    padding: 116px 0;
     position: relative;
     margin: 0 auto;
 }
@@ -928,7 +937,7 @@ section.bg-grey {
 
 .section-5 {
     overflow: hidden;
-    padding: 0 140px;
+    padding: 0;
 }
 
 .section-5 .container {
@@ -937,7 +946,8 @@ section.bg-grey {
 }
 
 .section-5 .content {
-    padding: 116px 60px;
+    top: -112px;
+    padding: 116px 60px 0;
     position: relative;
     overflow: hidden;
 }
@@ -1012,7 +1022,7 @@ section.bg-grey {
 
 .section-6 {
     overflow: hidden;
-    padding: 116px 140px 164px;
+    padding: 116px 0 164px;
 }
 
 .section-6 h2 {
