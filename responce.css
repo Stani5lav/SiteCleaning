@@ -4,6 +4,35 @@
         width: 690px;
     }
 
+    /*
+    *=========
+    * header
+    *=========
+    */
+
+    header .nav-menus {
+        display: none;
+    }
+
+    header .nav-social {
+        width: 124px;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    header .soc-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+    /*
+    *=========
+    * Footer
+    *=========
+    */
+
     footer .container {
         flex-wrap: wrap;
         padding-top: 60px;
@@ -16,6 +45,10 @@
         margin-top: 0;
         margin-bottom: 40px;
         height: min-content;
+    }
+
+    .contacts {
+        margin-right: 50px;
     }
 
     .tech-support {
@@ -582,12 +615,65 @@
 ==================*/
 
 @media screen and (max-width: 500px) {
-    footer {}
 
     .container {
         width: 335px;
     }
 
+    /*
+    *=========
+    * Footer
+    *=========
+    */
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer p,
+    footer .phone,
+    footer .e-mail,
+    footer .address {
+        font-size: 14px;
+    }
+
+    .about-us,
+    .services,
+    .contacts,
+    .tech-support {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .terms {
+        flex-wrap: wrap;
+        padding: 0 38px;
+    }
+
+    .terms a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link1,
+    .services {
+        order: 3;
+    }
+
+    .tech-support {
+        order: 4;
+    }
+
+    /*
+    *=========
+    * header
+    *=========
+    */
+
+    header .nav-social,
+    header .phone {
+        display: none;
+    }
 
     /**
     SECTION 1
