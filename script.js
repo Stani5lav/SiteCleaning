@@ -69,6 +69,18 @@ $('.slider-nav li').on('click', function (e) { //(для об'єкту лі) (п
 
 });
 
+let keyButton1 = document.querySelector('.key-button-1');
+
+keyButton1.onclick = function () {
+    keyButton1.classList.toggle('active');
+};
+
+let keyButton2 = document.querySelector('.key-button-2');
+
+keyButton2.onclick = function () {
+    keyButton2.classList.toggle('active');
+};
+
 
 
 
