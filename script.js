@@ -69,6 +69,52 @@ $('.slider-nav li').on('click', function (e) { //(для об'єкту лі) (п
 
 });
 
+//************       Площа приміщення         ********************************************* */
+
+let square = document.querySelector('.square');
+let sq = 1;
+let plusSquareBtn = document.querySelector('.plus-square');
+let minusSquareBtn = document.querySelector('.minus-square');
+
+plusSquareBtn.onclick = function () {
+    sq++;
+    minusSquareBtn.src = "img/home/minus.png";
+    square.value = sq;
+}
+
+minusSquareBtn.onclick = function () {
+    if (sq > 1) {
+        sq--;
+        square.value = sq;
+    }
+
+    if (sq === 1) {
+        minusSquareBtn.src = "img/home/minus-na.png";
+    }
+}
+
+square.oninput = function () {
+    if (sq >= 1) {
+        sq = square.value;
+        square.value = sq;
+        if (sq > 1)
+            minusSquareBtn.src = "img/home/minus.png";
+    }
+}
+
+square.onchange = function () {
+    if (square.value < 1) {
+        square.value = sq;
+    }
+    if (sq <= 1) {
+        minusSquareBtn.src = "img/home/minus-na.png";
+    }
+
+}
+
+
+//*********************      Забрати/Привезти ключі         ************************************ */
+
 let keyButton1 = document.querySelector('.key-button-1');
 
 keyButton1.onclick = function () {
@@ -80,6 +126,15 @@ let keyButton2 = document.querySelector('.key-button-2');
 keyButton2.onclick = function () {
     keyButton2.classList.toggle('active');
 };
+
+//**********************      Поточна дата                    ********************** */
+let currentDate = new Date();
+
+let dateString = currentDate.toISOString().slice(0, 10);
+
+document.getElementById("inputDate").value = dateString;
+document.getElementById("inputDate").min = dateString;
+
 
 
 

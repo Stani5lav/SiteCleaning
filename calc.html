@@ -100,14 +100,14 @@
 
                             <div class="square-switch flex">
 
-                                <img src="img/home/minus-na.png">
+                                <img src="img/home/minus-na.png" class="minus-square">
 
                                 <div class="square-display">
-                                    <a class="square">1</a>
+                                    <input class="square" type="number" min="1" step="1" value="1" required>
                                     <a>м²</a>
                                 </div>
 
-                                <img src="img/home/plus.png">
+                                <img src="img/home/plus.png" class="plus-square">
 
                             </div>
 
@@ -187,6 +187,32 @@
                                 </div>
                             </div>
 
+                            <h3>Ваші дані</h3>
+
+                            <div class="client-data">
+
+                                <div class="name flex bg-transparent">
+
+                                    <div class="client-first-name"><input type="text" placeholder="Ваше ім’я"></div>
+                                    <div class="client-last-name"><input type="text" placeholder="Ваше прізвище"></div>
+                                </div>
+
+                                <!-- <input class="client-phone" type="text" placeholder="Номер телефону"> -->
+                                <input type="tel" name="phone" placeholder="Номер телефону" />
+
+                                <input class="client-email" type="text" placeholder="Email">
+
+
+                                <div class="flex">
+
+                                    <input type="text" value="На коли хочете прибирання?">
+                                    <input type="date" id="inputDate" name="inputDate">
+
+                                </div>
+
+
+                            </div>
+
 
 
 
@@ -195,7 +221,9 @@
 
                         </div>
 
-                        <div class="calc-info bg-white"></div>
+                        <div class="calc-info bg-white">
+                            Послуга
+                        </div>
 
                     </div>
 
