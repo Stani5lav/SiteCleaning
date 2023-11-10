@@ -53,6 +53,10 @@ a {
     justify-content: normal;
 }
 
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
 .items-center {
     align-items: center;
 }
@@ -83,6 +87,10 @@ a {
 
 .z-40 {
     z-index: 410;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -1405,7 +1413,7 @@ h2 {
     padding: 60px 28px 46px 90px;
     margin-right: 72px;
     border-radius: 30px;
-    width: 644px;
+    width: 60%;
 
     h3 {
         margin-top: 14px;
@@ -1470,6 +1478,17 @@ h2 {
                 text-align: right;
             }
 
+            .square::-webkit-outer-spin-button,
+            .square::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            .square[type=number] {
+                -moz-appearance: textfield;
+            }
+
+
             a {
                 font-weight: 400;
                 text-align: center;
@@ -1498,6 +1517,10 @@ h2 {
     .option {
         display: block;
         margin-bottom: 1.25em;
+
+        a {
+            color: #4D1299;
+        }
     }
 
     .check {
@@ -1533,13 +1556,14 @@ h2 {
 
     .key-block {
         margin-bottom: 50px;
-        width: 640px;
+        width: 100%;
     }
 
     .key-button-1,
     .key-button-2 {
         border: 2px solid #4D1299;
-        width: 310px;
+        color: #4D1299;
+        width: 48%;
         height: 82px;
         border-radius: 50px;
         font-size: 18px;
@@ -1564,18 +1588,23 @@ h2 {
     *Client-data
     */
 
-    .client-data {
-
+    .client-data,
+    .key-receive,
+    .key-back {
 
         input {
             width: 100%;
-            padding-bottom: 8px;
-            padding-left: 0;
+            padding: 0 0 8px 0;
             margin-bottom: 28px;
             border: none;
             outline: none;
-            border-bottom: 2px solid #4D1299;
+            border-bottom: 1px solid #4D1299;
             font-size: 18px;
+            position: relative;
+        }
+
+        h3 {
+            margin-top: 24px;
         }
 
         .client-first-name {
@@ -1587,27 +1616,140 @@ h2 {
             width: 336px;
         }
 
-        .client-phone,
-        .client-email {
-            width: 640px;
+
+        .date,
+        .time {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            .date-info,
+            .time-info {
+                width: 43%;
+                font-size: 18px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: rgba(27, 27, 27, 0.7);
+                cursor: auto;
+            }
+
+            #inputDate,
+            #inputTime {
+                width: 57%;
+                font-size: 18px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: #4D1299;
+            }
+
+            #inputDate::-webkit-calendar-picker-indicator {
+                background: url(/img/home/calendar.png);
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+
+            #inputTime::-webkit-calendar-picker-indicator {
+                background: url(/img/home/clock.png);
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
         }
 
-        #inputDate {
-            width: 976px;
+        #inputLocale {
+            background: url(/img/home/location.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            margin-bottom: 5px;
+        }
+
+        small {
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            color: rgba(27, 27, 27, 0.5);
+        }
+
+        #inputComment {
+            margin-top: 24px;
+            margin-bottom: 48px;
+            height: 90px;
+            width: 99%;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #4D1299;
         }
     }
 
-    /**
+    .client-data::-webkit-input-placeholder {
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: rgba(27, 27, 27, 0.7);
+    }
+
+    .approve {
+        width: 84%;
+
+        .check-box {
+            margin: 6px 0 6px -3em;
+        }
+    }
+
+    .payment-block {
+        width: 84%;
+        color: #4D1299;
+        font-size: 18px;
+        margin-top: 60px;
+
+        b {
+            width: 58%;
+        }
+
+        .crCard-button {
+            width: 317px;
+            border: 2px solid #4D1299;
+            height: 82px;
+            border-radius: 50px;
+            cursor: pointer;
+            justify-content: space-evenly;
+        }
+
+        .cash-button {
+            width: 194px;
+            border: 2px solid #4D1299;
+            height: 82px;
+            border-radius: 50px;
+            cursor: pointer;
+            justify-content: space-evenly;
+
+            img {
+                margin: 18px;
+            }
+        }
+
+        .crCard-button.active,
+        .crCard-button:hover,
+        .cash-button.active,
+        .cash-button:hover {
+            background: #4D1299;
+            color: #FFF;
+            transition: all 0.5s ease-out;
+        }
+
+
+
+
+
+    }
+}
+
+
+
+/**
     *calc-info
     */
 
-    .calc-info {
-        width: 360px;
-    }
-
-
-
-
-
+.calc-info {
+    width: 360px;
 
 }

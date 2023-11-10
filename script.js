@@ -116,16 +116,23 @@ square.onchange = function () {
 //*********************      Забрати/Привезти ключі         ************************************ */
 
 let keyButton1 = document.querySelector('.key-button-1');
+let receiveAdress = document.querySelector('.key-receive');
 
 keyButton1.onclick = function () {
     keyButton1.classList.toggle('active');
+    receiveAdress.classList.toggle('hidden');
+
 };
 
 let keyButton2 = document.querySelector('.key-button-2');
+let backAdress = document.querySelector('.key-back');
 
 keyButton2.onclick = function () {
     keyButton2.classList.toggle('active');
+    backAdress.classList.toggle('hidden');
+
 };
+
 
 //**********************      Поточна дата                    ********************** */
 let currentDate = new Date();
@@ -135,7 +142,38 @@ let dateString = currentDate.toISOString().slice(0, 10);
 document.getElementById("inputDate").value = dateString;
 document.getElementById("inputDate").min = dateString;
 
+//*********************      Час        ******************************************** */
 
+// function validateTime() {
+//     var inputTime = document.getElementById('inputTime');
+//     var minTime = '08:00';
+//     var maxTime = '17:00';
+
+//     // Приводим значения к стандартному формату времени
+//     var inputTimeValue = inputTime.value.substring(0, 5);
+
+//     if (inputTimeValue < minTime) {
+//         inputTime.value = minTime;
+//     } else if (inputTimeValue > maxTime) {
+//         inputTime.value = maxTime;
+//     }
+// }
+
+
+//*********************      Оплата       ******************************************** */
+
+let crCardButton = document.querySelector('.crCard-button');
+let cashButton = document.querySelector('.cash-button');
+
+crCardButton.onclick = function () {
+    crCardButton.classList.add('active');
+    cashButton.classList.remove('active');
+};
+
+cashButton.onclick = function () {
+    cashButton.classList.add('active');
+    crCardButton.classList.remove('active');
+};
 
 
 

@@ -187,36 +187,89 @@
                                 </div>
                             </div>
 
-                            <h3>Ваші дані</h3>
+                            <div class="key-receive hidden">
 
-                            <div class="client-data">
+                                <h3>Де забирати?</h3>
+                                <input type="text" id="inputLocale" placeholder="Введіть адресу" required>
+                            </div>
 
-                                <div class="name flex bg-transparent">
+                            <div class="key-back hidden">
 
-                                    <div class="client-first-name"><input type="text" placeholder="Ваше ім’я"></div>
-                                    <div class="client-last-name"><input type="text" placeholder="Ваше прізвище"></div>
-                                </div>
-
-                                <!-- <input class="client-phone" type="text" placeholder="Номер телефону"> -->
-                                <input type="tel" name="phone" placeholder="Номер телефону" />
-
-                                <input class="client-email" type="text" placeholder="Email">
-
-
-                                <div class="flex">
-
-                                    <input type="text" value="На коли хочете прибирання?">
-                                    <input type="date" id="inputDate" name="inputDate">
-
-                                </div>
-
-
+                                <h3>Куди доставити?</h3>
+                                <input type="text" id="inputLocale" placeholder="Введіть адресу" required>
                             </div>
 
 
 
+                            <div class="client-data">
+
+                                <h3>Ваші дані</h3>
 
 
+                                <div class="name flex justify-between bg-transparent">
+
+                                    <div class="client-first-name"><input type="text" placeholder="Ваше ім’я" required>
+                                    </div>
+                                    <div class="client-last-name"><input type="text" placeholder="Ваше прізвище"
+                                            required></div>
+                                </div>
+
+                                <input type="tel" name="phone" placeholder="Номер телефону" required />
+                                <input type="email" class="client-email" placeholder="Email">
+
+                                <div class="flex date">
+
+                                    <input type="text" class="date-info" value="На коли хочете прибирання?" readonly>
+                                    <input type="date" id="inputDate" name="inputDate">
+                                </div>
+
+                                <div class="flex time">
+                                    <input type="text" class="time-info" value="На котру годину?" readonly>
+                                    <input type="time" id="inputTime" name="inputTime" min="08:00" max="17:00"
+                                        step="1800">
+                                </div>
+
+                                <input type="text" id="inputLocale"
+                                    placeholder="Ваша повна адреса (включаючи номер будинку та квартиру)">
+                                <small>*Працюємо по місту Лодзь та +30 км за містом (виїзд за місто оплачується
+                                    окремо)</small>
+
+                                <textarea id="inputComment" rows="5" placeholder="Ваш коментар"></textarea>
+
+                            </div>
+
+                            <div class="approve">
+
+                                <label class="check option">
+                                    <input class="check-input" type="checkbox" required>
+                                    <span class="check-box"></span>
+                                    Оформлюючи замовлення я погоджуюсь з <span><a href="#">договором публічної
+                                            оферти</a></span> та <span><a href="#">політикою
+                                            конфіденційності</a></span>
+                                </label>
+
+                                <label class="check option">
+                                    <input class="check-input" type="checkbox" required>
+                                    <span class="check-box"></span>
+                                    Я даю згоду для використання моїх особистих данних в цілях відправки підписки та
+                                    акційних пропозицій
+                                </label>
+                            </div>
+
+
+                            <div class="payment-block flex justify-between">
+                                <div class="crCard-button flex items-center">
+                                    <img src="/img/home/crCard.png">
+
+                                    <b>Картой online/Apple Pay/Google Pay</b>
+                                </div>
+
+                                <div class="cash-button flex items-center">
+                                    <img src="/img/home/cash.png">
+
+                                    <b>Готівкою</b>
+                                </div>
+                            </div>
 
 
                         </div>
