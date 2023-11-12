@@ -103,7 +103,7 @@
                                 <img src="img/home/minus-na.png" class="minus-square">
 
                                 <div class="square-display">
-                                    <input class="square" type="number" min="1" step="1" value="1" required>
+                                    <input class="square" type="number" min="1" max="999" step="1" value="1" required>
                                     <a>м²</a>
                                 </div>
 
@@ -117,55 +117,55 @@
                                 <h3>Додаткові послуги</h3>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox" checked>
+                                    <input class="check-input add-service" type="checkbox" value="35">
                                     <span class="check-box"></span>
                                     Миття вікон (стандартні) - <b>35zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="40">
                                     <span class="check-box"></span>
                                     Миття вікон (до підлоги) - <b>40zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="15">
                                     <span class="check-box"></span>
                                     Мікрохвильовка - <b>15zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="40">
                                     <span class="check-box"></span>
                                     Холодильник - <b>40zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="35">
                                     <span class="check-box"></span>
                                     Плита - <b>35zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="20">
                                     <span class="check-box"></span>
                                     Хімчистка офісних стільчиків - <b>20zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="109.99">
                                     <span class="check-box"></span>
                                     Хімчистка дивану 2х - <b>109,99zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="129.99">
                                     <span class="check-box"></span>
                                     Хімчистка дивану 3х - <b>129,99zł</b>
                                 </label>
 
                                 <label class="check option">
-                                    <input class="check-input" type="checkbox">
+                                    <input class="check-input add-service" type="checkbox" value="149.99">
                                     <span class="check-box"></span>
                                     Хімчистка дивану 4х - <b>149,99zł</b>
                                 </label>
@@ -274,18 +274,40 @@
 
                         </div>
 
-                        <div class="calc-info bg-white">
-                            Послуга
+                        <div class="calc-display bg-white">
+                            <div class="title flex justify-between">
+                                <h4>Послуга</h4>
+                                <h4>Вартість</h4>
+                            </div>
+
+                            <div class="calc-square flex justify-between">
+                                <div class="flex">
+                                    <div>Площа:</div>
+                                    <div class="full-square">1 м²</div>
+                                </div>
+                                <div class="sq-result-price">
+                                    <div class="sq-price"><b class="sq-price-b">2zł</b></div>
+                                </div>
+
+                            </div>
+
+                            <div class="calc-additional"></div>
+
+                            <div class="total flex justify-between">
+                                <h4>Вартість</h4>
+                                <div class="total-result">2zł</div>
+                            </div>
+
+                            <a href="#" class="btn">Замовити прибирання</a>
+
                         </div>
 
                     </div>
 
-
                 </div>
             </section>
-
         </main>
-
+        <!-- ************************************************************************************************* -->
         <footer>
             <div class="container flex justify-between">
 

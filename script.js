@@ -73,44 +73,58 @@ $('.slider-nav li').on('click', function (e) { //(для об'єкту лі) (п
 
 let square = document.querySelector('.square');
 let sq = 1;
+let sqTotalPrice = 2
 let plusSquareBtn = document.querySelector('.plus-square');
 let minusSquareBtn = document.querySelector('.minus-square');
+let fullSquare = document.querySelector('.full-square');
+let sqPrice = document.querySelector('.sq-price-b');
+
+function PrintInput() {
+    square.value = sq;
+    fullSquare.innerHTML = sq + ' м²';
+    sqTotalPrice = sq * 2;
+    sqPrice.innerHTML = sqTotalPrice + 'zł';
+    totalResult.innerHTML = sqTotalPrice + totalPrice + 'zł';
+}
+
 
 plusSquareBtn.onclick = function () {
     sq++;
     minusSquareBtn.src = "img/home/minus.png";
-    square.value = sq;
+
+    PrintInput();
 }
 
 minusSquareBtn.onclick = function () {
     if (sq > 1) {
         sq--;
-        square.value = sq;
+
+        PrintInput();
     }
 
     if (sq === 1) {
         minusSquareBtn.src = "img/home/minus-na.png";
     }
+    PrintInput();
 }
 
 square.oninput = function () {
-    if (sq >= 1) {
+    if (square.value >= 1) {
         sq = square.value;
-        square.value = sq;
-        if (sq > 1)
+
+        PrintInput();
+
+        if (sq > 1) {
             minusSquareBtn.src = "img/home/minus.png";
-    }
-}
-
-square.onchange = function () {
-    if (square.value < 1) {
-        square.value = sq;
-    }
-    if (sq <= 1) {
-        minusSquareBtn.src = "img/home/minus-na.png";
+        }
+        return;
     }
 
+    sq = 1;
+    PrintInput();
 }
+
+
 
 
 //*********************      Забрати/Привезти ключі         ************************************ */
@@ -174,6 +188,49 @@ cashButton.onclick = function () {
     cashButton.classList.add('active');
     crCardButton.classList.remove('active');
 };
+
+
+//*********************      Додаткові послуги       ******************************************** */
+
+let addServices = document.querySelectorAll('.add-service');
+
+let calcDisp = document.querySelector('.calc-additional');
+
+let addPrice = 0;
+
+
+
+for (let i of addServices) {
+    i.onchange = function () {
+        if (i.checked) {
+            calcDisp.innerHTML += '<div class="new-add flex justify-between"><div>'
+                + i.parentElement.innerText.slice(0, i.parentElement.innerText.indexOf(' -')) +
+                '</div><div><b>'
+                + i.parentElement.innerText.slice(i.parentElement.innerText.indexOf(' -') + 3) +
+                '</b></div></div>';
+
+            totalPrice += parseFloat(i.value);
+            PrintInput();
+        }
+        else {
+            calcDisp.innerHTML = calcDisp.innerHTML.replace('<div class="new-add flex justify-between"><div>'
+                + i.parentElement.innerText.slice(0, i.parentElement.innerText.indexOf(' -')) +
+                '</div><div><b>'
+                + i.parentElement.innerText.slice(i.parentElement.innerText.indexOf(' -') + 3) +
+                '</b></div></div>', "");
+
+            totalPrice -= parseFloat(i.value);
+            PrintInput();
+        }
+
+    }
+}
+
+
+//*********************      Калькуляція       ******************************************** */
+
+let totalPrice = 0;
+let totalResult = document.querySelector('.total-result');
 
 
 
