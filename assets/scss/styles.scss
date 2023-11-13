@@ -311,6 +311,10 @@ Home page
     background: #E5E5E5;
 }
 
+.bg-lgtgrey {
+    background: #F4F4F8;
+}
+
 .bg-transparent {
     background: transparent;
 }
@@ -586,19 +590,27 @@ Home page
     padding: 116px 0 340px;
 }
 
-.section-3 h2 {
-    font-size: 46px;
-    text-align: center;
-    margin-bottom: 16px;
+.section-3 .pack-title {
+    width: 737px;
+    padding: 0 212px;
+    margin-bottom: 48px;
+
+    h2 {
+        margin: 0;
+        font-size: 46px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 0;
+        margin: 0 34px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
 }
 
-.section-3 .pack-title p {
-    font-size: 18px;
-    padding: 0;
-    margin: 0 251px;
-    text-align: center;
-    margin-bottom: 16px;
-}
 
 .section-3 .col-1,
 .section-3 .col-2 {
@@ -1414,431 +1426,494 @@ Home page
 *Calculator
 *
 */
+.subscription-section {
 
-.non-active {
-    background: rgba(77, 18, 153, 0.5);
-}
+    padding: 100px 0;
+    /* overflow: hidden; */
+    box-shadow: inset 0px 30px 15px 0px rgba(229, 229, 229, 1);
 
-h2 {
-    text-align: center;
-    font-size: 46px;
-    margin-bottom: 190px;
-}
 
-.calculator {
-    padding: 60px 28px 46px 90px;
-    margin-right: 72px;
-    border-radius: 30px;
-    width: 60%;
 
-    h3 {
-        margin-top: 14px;
-        margin-bottom: 24px;
-        font-size: 22px;
+    .subscription {
+        background-color: #EBE7F3;
+        margin-bottom: 56px;
+
     }
 
-    .nav-switch {
-        border: 2px solid #4D1299;
-        border-radius: 50px;
-        width: fit-content;
-        padding: 3px 3px;
-        margin-top: -4px;
-        margin-bottom: 40px;
-        display: flex;
-        justify-content: space-around;
+    .cols {
 
-        a {
-            font-weight: 400;
-            width: 162px;
-            text-align: center;
-            color: #1B1B1B;
-            padding: 16px 0;
-            margin: 0 2px;
-            font-size: 16px;
-            transition: all 0.1s ease-out;
-        }
+        .col {
+            background-color: #FFF;
+            border-radius: 30px;
+            padding: 40px;
+            width: calc(100%/2 - 100px);
 
-        a.active,
-        a:hover {
-            background: #4D1299;
-            color: #FFF;
-            border-radius: 25px;
-        }
-    }
-
-    .square-switch {
-        border: 2px solid #4D1299;
-        border-radius: 50px;
-        width: fit-content;
-        padding: 3px;
-        margin-bottom: 8px;
-        justify-content: space-around;
-
-        img {
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-        }
-
-        .square-display {
-            margin: 3px 12px 3px 0;
-
-
-            .square {
-                width: 34px;
-                border: none;
-                outline: none;
-                font-size: 18px;
-                font-weight: bold;
-                padding: 4px 0;
-                text-align: right;
-                -moz-appearance: textfield;
-                cursor: pointer;
+            .number {
+                color: #4D1299;
+                font-size: 32px;
+                font-weight: 600;
+                padding-bottom: 16px;
             }
 
-            .square::-webkit-outer-spin-button,
-            .square::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 16px;
+                font-family: 'Montserrat', 'semi-bold';
             }
 
-            a {
-                font-weight: 400;
-                text-align: center;
-                color: #1B1B1B;
-                transition: all 0.3s ease-out;
+            p {
                 font-size: 18px;
-                font-weight: bold;
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                user-select: none;
-                margin: 0;
                 padding: 0;
+                margin: 0;
+            }
+
+            .note {
+                margin-top: 78px;
+                font-size: 16px;
+                font-family: 'Open Sans';
+                font-weight: 600;
+                color: rgba(27, 27, 27, 0.6);
             }
         }
     }
+}
 
-    p {
-        font-size: 16px;
-        margin-left: 50px;
-        margin-top: 0;
+
+
+
+.calc-section {
+    .non-active {
+        background: rgba(77, 18, 153, 0.5);
     }
 
-    /**
-    *Checkbox
-    */
-
-    .additional {
-        margin: 48px 0;
+    h2 {
+        text-align: center;
+        font-size: 46px;
+        margin-bottom: 190px;
     }
 
-    .option {
-        display: block;
-        margin-bottom: 1.25em;
+    .calculator {
+        padding: 60px 28px 46px 90px;
+        margin-bottom: 90px;
+        margin-right: 72px;
+        border-radius: 30px;
+        width: 60%;
 
-        a {
-            color: #4D1299;
-        }
-    }
-
-    .check {
-        padding-left: 3em;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-    .check-input {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-    }
-
-    .check-box {
-        position: absolute;
-        margin-left: -3em;
-        width: 2em;
-        height: 2em;
-        background: url(/img/home/ChkOff.png);
-        background-repeat: no-repeat;
-    }
-
-    .check-input:checked+.check-box {
-        background: url(/img/home/ChkOn.png);
-        background-repeat: no-repeat;
-    }
-
-    /**
-    *KeyButton
-    */
-
-    .key-block {
-        margin-bottom: 50px;
-        width: 100%;
-    }
-
-    .key-button-1,
-    .key-button-2 {
-        border: 2px solid #4D1299;
-        color: #4D1299;
-        width: 48%;
-        height: 82px;
-        border-radius: 50px;
-        font-size: 18px;
-        cursor: pointer;
-
-        img {
-            margin: 18px 16px 18px 26px;
-        }
-
-    }
-
-    .key-button-1.active,
-    .key-button-1:hover,
-    .key-button-2.active,
-    .key-button-2:hover {
-        background: #4D1299;
-        color: #FFF;
-        transition: all 0.5s ease-out;
-    }
-
-    /**
-    *Client-data
-    */
-
-    .client-data,
-    .key-receive,
-    .key-back {
-
-        input {
-            width: 100%;
-            padding: 0 0 8px 0;
-            margin-bottom: 28px;
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #4D1299;
-            font-size: 18px;
-            position: relative;
+        .discount-sticker {
+            position: absolute;
+            top: 28%;
+            left: 48%;
         }
 
         h3 {
-            margin-top: 24px;
+            margin-top: 14px;
+            margin-bottom: 24px;
+            font-size: 22px;
         }
 
-        .client-first-name {
-            width: 236px;
-            margin-right: 60px;
-        }
-
-        .client-last-name {
-            width: 336px;
-        }
-
-
-        .date,
-        .time {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-
-            .date-info,
-            .time-info {
-                width: 43%;
-                font-size: 18px;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 600;
-                color: rgba(27, 27, 27, 0.7);
-                cursor: auto;
-            }
-
-            #inputDate,
-            #inputTime {
-                width: 57%;
-                font-size: 18px;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 600;
-                color: #4D1299;
-            }
-
-            #inputDate::-webkit-calendar-picker-indicator {
-                background: url(/img/home/calendar.png);
-                background-repeat: no-repeat;
-                cursor: pointer;
-            }
-
-            #inputTime::-webkit-calendar-picker-indicator {
-                background: url(/img/home/clock.png);
-                background-repeat: no-repeat;
-                cursor: pointer;
-            }
-        }
-
-        #inputLocale {
-            background: url(/img/home/location.png);
-            background-repeat: no-repeat;
-            background-position: right top;
-            margin-bottom: 5px;
-        }
-
-        small {
-            font-size: 14px;
-            font-family: 'Open Sans', sans-serif;
-            color: rgba(27, 27, 27, 0.5);
-        }
-
-        #inputComment {
-            margin-top: 24px;
-            margin-bottom: 48px;
-            height: 90px;
-            width: 99%;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #4D1299;
-        }
-    }
-
-    .client-data::-webkit-input-placeholder {
-        font-size: 18px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        color: rgba(27, 27, 27, 0.7);
-    }
-
-    .approve {
-        width: 84%;
-
-        .check-box {
-            margin: 6px 0 6px -3em;
-        }
-    }
-
-    .payment-block {
-        width: 84%;
-        color: #4D1299;
-        font-size: 18px;
-        margin-top: 60px;
-
-        b {
-            width: 58%;
-        }
-
-        .crCard-button {
-            width: 317px;
+        .nav-switch {
             border: 2px solid #4D1299;
-            height: 82px;
             border-radius: 50px;
-            cursor: pointer;
-            justify-content: space-evenly;
+            width: fit-content;
+            padding: 3px 3px;
+            margin-top: -4px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                font-weight: 400;
+                width: 162px;
+                text-align: center;
+                color: #1B1B1B;
+                padding: 16px 0;
+                margin: 0 2px;
+                font-size: 16px;
+                transition: all 0.1s ease-out;
+            }
+
+            a.active,
+            a:hover {
+                background: #4D1299;
+                color: #FFF;
+                border-radius: 25px;
+            }
         }
 
-        .cash-button {
-            width: 194px;
+        .square-switch {
             border: 2px solid #4D1299;
-            height: 82px;
             border-radius: 50px;
-            cursor: pointer;
-            justify-content: space-evenly;
+            width: fit-content;
+            padding: 3px;
+            margin-bottom: 8px;
+            justify-content: space-around;
 
             img {
-                margin: 18px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+            }
+
+            .square-display {
+                margin: 3px 12px 3px 0;
+
+
+                .square {
+                    width: 34px;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 4px 0;
+                    text-align: right;
+                    -moz-appearance: textfield;
+                    cursor: pointer;
+                }
+
+                .square::-webkit-outer-spin-button,
+                .square::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                a {
+                    font-weight: 400;
+                    text-align: center;
+                    color: #1B1B1B;
+                    transition: all 0.3s ease-out;
+                    font-size: 18px;
+                    font-weight: bold;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                    user-select: none;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
 
-        .crCard-button.active,
-        .crCard-button:hover,
-        .cash-button.active,
-        .cash-button:hover {
+        p {
+            font-size: 16px;
+            margin-left: 50px;
+            margin-top: 0;
+        }
+
+        /**
+        *Checkbox
+        */
+
+        .additional {
+            margin: 48px 0;
+        }
+
+        .option {
+            display: block;
+            margin-bottom: 1.25em;
+
+            a {
+                color: #4D1299;
+            }
+        }
+
+        .check {
+            padding-left: 3em;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .check-input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+        }
+
+        .check-box {
+            position: absolute;
+            margin-left: -3em;
+            width: 2em;
+            height: 2em;
+            background: url(/img/home/ChkOff.png);
+            background-repeat: no-repeat;
+        }
+
+        .check-input:checked+.check-box {
+            background: url(/img/home/ChkOn.png);
+            background-repeat: no-repeat;
+        }
+
+        /**
+        *KeyButton
+        */
+
+        .key-block {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        .key-button-1,
+        .key-button-2 {
+            border: 2px solid #4D1299;
+            color: #4D1299;
+            width: 48%;
+            height: 82px;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+
+            img {
+                margin: 18px 16px 18px 26px;
+            }
+
+        }
+
+        .key-button-1.active,
+        .key-button-1:hover,
+        .key-button-2.active,
+        .key-button-2:hover {
             background: #4D1299;
             color: #FFF;
             transition: all 0.5s ease-out;
         }
-    }
-}
+
+        /**
+        *Client-data
+        */
+
+        .client-data,
+        .key-receive,
+        .key-back {
+
+            input {
+                width: 100%;
+                padding: 0 0 8px 0;
+                margin-bottom: 28px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #4D1299;
+                font-size: 18px;
+                position: relative;
+            }
+
+            h3 {
+                margin-top: 24px;
+            }
+
+            .client-first-name {
+                width: 236px;
+                margin-right: 60px;
+            }
+
+            .client-last-name {
+                width: 336px;
+            }
 
 
+            .date,
+            .time {
+                width: 100%;
+                margin: 0;
+                padding: 0;
 
-/**
-    *calc-info
-    */
+                .date-info,
+                .time-info {
+                    width: 43%;
+                    font-size: 18px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    color: rgba(27, 27, 27, 0.7);
+                    cursor: auto;
+                }
 
-.calc-display {
-    width: 360px;
-    height: fit-content;
-    padding: 40px;
-    border-radius: 30px;
+                #inputDate,
+                #inputTime {
+                    width: 57%;
+                    font-size: 18px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    color: #4D1299;
+                }
 
-    .title {
-        border-bottom: 1px solid #4D1299;
-        height: 2em;
-        margin-bottom: 16px;
+                #inputDate::-webkit-calendar-picker-indicator {
+                    background: url(/img/home/calendar.png);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
 
-        h4 {
-            font-size: 16px;
+                #inputTime::-webkit-calendar-picker-indicator {
+                    background: url(/img/home/clock.png);
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+            }
+
+            #inputLocale {
+                background: url(/img/home/location.png);
+                background-repeat: no-repeat;
+                background-position: right top;
+                margin-bottom: 5px;
+            }
+
+            small {
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+                color: rgba(27, 27, 27, 0.5);
+            }
+
+            #inputComment {
+                margin-top: 24px;
+                margin-bottom: 48px;
+                height: 90px;
+                width: 99%;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #4D1299;
+            }
+        }
+
+        .client-data::-webkit-input-placeholder {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: rgba(27, 27, 27, 0.7);
+        }
+
+        .approve {
+            width: 84%;
+
+            .check-box {
+                margin: 6px 0 6px -3em;
+            }
+        }
+
+        .payment-block {
+            width: 84%;
+            color: #4D1299;
+            font-size: 18px;
+            margin-top: 60px;
+
+            b {
+                width: 58%;
+            }
+
+            .crCard-button {
+                width: 317px;
+                border: 2px solid #4D1299;
+                height: 82px;
+                border-radius: 50px;
+                cursor: pointer;
+                justify-content: space-evenly;
+            }
+
+            .cash-button {
+                width: 194px;
+                border: 2px solid #4D1299;
+                height: 82px;
+                border-radius: 50px;
+                cursor: pointer;
+                justify-content: space-evenly;
+
+                img {
+                    margin: 18px;
+                }
+            }
+
+            .crCard-button.active,
+            .crCard-button:hover,
+            .cash-button.active,
+            .cash-button:hover {
+                background: #4D1299;
+                color: #FFF;
+                transition: all 0.5s ease-out;
+            }
         }
     }
 
-    .calc-square {
-        margin-bottom: 8px;
-    }
 
-    .sq-result-price {
 
-        .sq-price {
-            width: fit-content;
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-            text-align: right;
+    /**
+        *calc-info
+        */
+
+    .calc-display {
+        width: 360px;
+        height: fit-content;
+        padding: 40px;
+        border-radius: 30px;
+
+        .title {
+            border-bottom: 1px solid #4D1299;
+            height: 2em;
+            margin-bottom: 16px;
+
+            h4 {
+                font-size: 16px;
+            }
         }
-    }
 
-    .full-square {
-        padding-left: 0.3em;
-    }
-
-    .calc-additional {
-        border-bottom: 1px solid #4D1299;
-        padding-bottom: 8px;
-        margin-bottom: 16px;
-
-        .new-add {
+        .calc-square {
             margin-bottom: 8px;
         }
-    }
 
-    .total {
-        h4 {
+        .sq-result-price {
+
+            .sq-price {
+                width: fit-content;
+                font-size: 16px;
+                padding: 0;
+                margin: 0;
+                text-align: right;
+            }
+        }
+
+        .full-square {
+            padding-left: 0.3em;
+        }
+
+        .calc-additional {
+            border-bottom: 1px solid #4D1299;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+
+            .new-add {
+                margin-bottom: 8px;
+            }
+        }
+
+        .total {
+            h4 {
+                font-size: 18px;
+            }
+
+            .total-result {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .btn {
+            background: #4D1299;
+            color: #FFF;
+            border: 2px solid #4D1299;
+            border-radius: 50px;
+            margin-top: 46px;
+            padding: 18px 26px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+            width: 210px;
+            height: 25px;
             font-size: 18px;
         }
 
-        .total-result {
-            font-size: 18px;
-            font-weight: bold;
+        .btn:hover {
+            background: #FFF;
+            color: #4D1299;
         }
     }
-
-    .btn {
-        background: #4D1299;
-        color: #FFF;
-        border: 2px solid #4D1299;
-        border-radius: 50px;
-        margin-top: 46px;
-        padding: 18px 26px;
-        cursor: pointer;
-        transition: all 0.3s ease-out;
-        display: inline-block;
-        width: 210px;
-        height: 25px;
-        font-size: 18px;
-    }
-
-    .btn:hover {
-        background: #FFF;
-        color: #4D1299;
-    }
-
 
 }

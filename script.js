@@ -153,7 +153,7 @@ let currentDate = new Date();
 
 let dateString = currentDate.toISOString().slice(0, 10);
 
-document.getElementById("inputDate").value = dateString;
+// document.getElementById("inputDate").value = dateString;
 document.getElementById("inputDate").min = dateString;
 
 //*********************      Час        ******************************************** */

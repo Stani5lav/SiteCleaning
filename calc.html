@@ -84,12 +84,71 @@
         </header>
 
         <main>
-            <section class="bg-grey">
+            <section class="subscription-section section-3 -bg-lgtgrey ">
+                <div class="container">
+                    <div class="pack-title">
+                        <h2>Ціна на прибирання квартир та будинків</h2>
+                    </div>
+
+                    <div class="subscription flex">
+
+
+                        <div class="col-1">
+                            <h3>Місячна підписка на клінінг для будинку чи квартири</h3>
+                            <ul>
+                                <li>1 генеральне прибирання</li>
+                                <li>1 базове прибирання</li>
+                            </ul>
+                            <div class="bonus flex">
+                                <img src="img/home/bonus.svg">
+                                <a>Хімчистка стільців, диванів, матраців, подушок
+                                    та крісел раз у 6 місяців у <span>подарунок</span>!</a>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <h1>399zł</h1>
+                            <p>1 генеральне прибирання + 1 підтримуюче прибирання</p>
+                            <a href="#" class="btn">Замовити прибирання</a>
+                        </div>
+                    </div>
+
+                    <div class="cols flex justify-between">
+                        <div class="col">
+                            <div class="number">01</div>
+                            <h3>Бюджетна підписка</h3>
+                            <p>Ми відправимо до вас клінера з повним арсеналом професійних інструментів (миючі пилососи
+                                і
+                                пароочисники <span>KARCHER</span> та безпечна і суперпотужна хімія <span>KIEHL</span> та
+                                <span>Pomoc Domowa</span>). Клінер прибере будинок і відмиє всі поверхні від жиру, бруду
+                                та
+                                пилу. Він наведе порядок всередині шаф, помиє вікна та винесе сміття. Раз на 6 місяців
+                                проводимо хімчистку диванів, матраців та подушок.
+                            </p>
+                        </div>
+
+                        <div class="col">
+                            <div class="number">02</div>
+                            <h3>Підтримуюче прибирання</h3>
+                            <p>Змінюємо постільну білизну, акуратно складаємо реші у шафі, видаляємо пил з поверхонь,
+                                пилососимо та миємо пілогу. Робимо все, аби тривати вашу домівку у чистоті!</p>
+                            <p class="note">*Не включає миття вікон</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+            <section class="calc-section bg-lgtgrey">
                 <div class="container">
                     <h2>Розрахунок вартості прибирання</h2>
                     <div class="calc-block flex">
                         <div class="calculator block bg-white">
-                            <h3>Вид прибирання</h3>
+                            <img class="discount-sticker" src="/img/home/discount-sticker.png">
+                            <h3 class="type-cleaning">Вид прибирання</h3>
 
                             <div class="nav-switch">
                                 <a href="#" class="active"><b>Офіс</b></a>
@@ -171,7 +230,7 @@
                                 </label>
                             </div>
 
-                            <h3>Доставимо ключі</h3>
+                            <h3 class="deliv-key-title">Доставимо ключі</h3>
 
                             <div class="key-block flex justify-between">
                                 <div class="key-button-1 flex items-center">
@@ -219,15 +278,17 @@
 
                                 <div class="flex date">
 
-                                    <input type="text" class="date-info" value="На коли хочете прибирання?" readonly>
+                                    <input type="text" class="date-info" placeholder="На коли хочете прибирання?"
+                                        readonly>
                                     <input type="date" id="inputDate" name="inputDate">
                                 </div>
 
                                 <div class="flex time">
-                                    <input type="text" class="time-info" value="На котру годину?" readonly>
+                                    <input type="text" class="time-info" placeholder="На котру годину?" readonly>
                                     <input type="time" id="inputTime" name="inputTime" min="08:00" max="17:00"
                                         step="1800">
                                 </div>
+
 
                                 <input type="text" id="inputLocale"
                                     placeholder="Ваша повна адреса (включаючи номер будинку та квартиру)">
@@ -305,6 +366,62 @@
                     </div>
 
                 </div>
+            </section>
+
+            <section class="section-4 bg-white">
+                <div class="container">
+                    <h2>Відгуки про компанію Comfort Group</h2>
+
+                    <div class="cols">
+                        <div class="col">
+                            <h3>Міколай Ковальчук</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Дуже хороший сервіс! Клінер Анна приємна та працьовита дівчина. Приїхала без запізнень,
+                                швидко і якісно прибрала в моїй квартирі.</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Бронислав Левандовський</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Чудові клінери та сервіс. Не шкодую що обрав саме вас: прибрали ретельно та швидко.</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Марія Кравчук</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Замовляла прибирання в квартиру після косметичного ремонту. Дівчата з Comfort Group мене
+                                просто врятували! Прибрали дуже швидко та ретельно. Без їх допомоги я б ще не один день
+                                витрачала свій час на це прибирання!</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Ян Кравчик</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Дякую за гарну роботу!<br>Ви чудово прибрали наш офіс після новорічного корпоративу.</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Алекс Кашпор</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Оформлюю у Comfort Group вже другу місячну підписку. З моїм графком роботи це ідеальний
+                                варіант. Вдома завжди чисто та свіжо! Дякую за вашу роботу!</p>
+                        </div>
+
+                        <div class="col">
+                            <h3>Юлія Возняк</h3>
+                            <img src="img/home/stars.svg">
+                            <p>Замовляла місячну підписку на прибирання для своєї бабусі. Тетяна з Comfort Group була
+                                дуже
+                                милою та ретельно все прибрала.</p>
+                        </div>
+                    </div>
+
+                    <div class="btns flex justify-center">
+                        <a href="#" class="btn-google">Залишити відгук у Google</a>
+                        <a href="#" class="btn-facebook">Залишити відгук у Facebook</a>
+                    </div>
+                </div>
+
             </section>
         </main>
         <!-- ************************************************************************************************* -->

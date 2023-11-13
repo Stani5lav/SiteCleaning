@@ -161,8 +161,8 @@
 
     .section-2 .col {
         margin-bottom: 0;
-        padding: 24px;
-        width: calc(100%/2 - 54px);
+        padding: 32px 24px;
+        width: calc(100%/2 - 60px);
     }
 
     .section-2 .col p {
@@ -271,7 +271,7 @@
     SECTION 3
     */
 
-    .section-3.bg-grey {
+    .section-3 {
         padding: 72px 0;
         background: #f4f4f8;
     }
@@ -281,21 +281,32 @@
         font-size: 36px !important;
     }
 
-    .section-3 h2 {
-        font-size: 32px;
-    }
-
     .section-3 h3 {
         font-size: 28px;
         margin-bottom: 16px;
+    }
+
+
+    .section-3 .col-1 h3 {
+        margin-right: 88px;
     }
 
     .section-3 p {
         font-size: 16px !important;
     }
 
-    .section-3 .pack-title p {
-        margin: 0 70px 48px;
+    .section-3 .pack-title {
+        width: 568px;
+        padding: 0 61px;
+
+        h2 {
+            font-size: 32px;
+            margin: 0 10px;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 
     .section-3 .subscription {
@@ -310,10 +321,15 @@
 
     .section-3 .col-2 .btn {
         font-size: 16px;
+        margin: 36px auto 0;
     }
 
     .section-3 .bonus {
         flex-wrap: wrap;
+    }
+
+    .section-3 .bonus a {
+        font-size: 16px;
     }
 
     .section-3 .banner {
@@ -603,10 +619,184 @@
         height: 32px;
     }
 
+    /*
+    *********
+    * Flat Calculator
+    *********
+    */
 
+    .subscription-section {
+
+        padding: 72px 39px;
+
+        .subscription {
+
+            margin-bottom: 56px;
+
+        }
+
+        border-radius: 30px;
+
+        .cols {
+
+            .col {
+                padding: 32px 24px;
+                margin-bottom: 0;
+                width: calc(100%/2 - 60px);
+
+                .number {
+                    font-size: 24px;
+                    padding-bottom: 16px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .note {
+                    margin-top: 105px;
+                    font-size: 16px;
+
+                }
+            }
+
+
+        }
+    }
+
+    .calc-section {
+        padding-bottom: 90px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 48px;
+        }
+
+        .calc-block {
+            display: block;
+
+            .calculator {
+                padding: 60px 30px;
+                margin-bottom: 60px;
+                margin-right: 0;
+                width: 640px;
+
+                .discount-sticker {
+                    // position: absolute;
+                    // top: 28%;
+                    // left: 48%;
+                    display: none;
+                }
+
+                .type-cleaning {
+                    font-size: 22px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                /**
+                *Checkbox
+                */
+
+                .additional {
+                    margin: 40px 0;
+                }
+
+                .check {
+                    font-size: 16px;
+                }
+
+                .check-box {
+                    width: 1.5em;
+                    height: 1.5em;
+                    background-size: cover;
+                }
+
+                .check-input:checked+.check-box {
+                    background-size: cover;
+                }
+
+                /**
+                *KeyButton
+                 */
+
+                .key-block {
+                    margin-bottom: 40px;
+                }
+
+
+                /**
+                *Client-data
+                */
+
+                .client-data,
+                .key-receive,
+                .key-back {
+
+                    input {
+                        font-size: 16px;
+                    }
+                }
+
+                #inputComment {
+                    margin-bottom: 40px;
+                }
+
+                .client-data::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+
+                .approve {
+                    width: 86%;
+                }
+
+                .payment-block {
+                    width: 80%;
+                    font-size: 16px;
+                    margin-top: 56px;
+
+                    .cash-button {
+                        width: 176px;
+
+                        img {
+                            margin: 14px;
+                        }
+                    }
+                }
+            }
+
+            .calc-display {
+                width: 280px;
+
+                .btn {
+                    margin-top: 40px;
+                    padding: 16px 33px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+    }
+
+    /**
+    *calc-info
+    */
 
 
 }
+
+
+
+
 
 /*================
 *
@@ -844,22 +1034,35 @@
     SECTION 3
     */
 
-    .section-3 h2 {
-        font-size: 24px;
+    .section-3 {
+        padding: 64px 0;
     }
 
+    .section-3 .pack-title {
+        width: 335px;
+        padding: 0px;
 
-    .section-3 .pack-title p {
-        margin: 0;
+        h2 {
+            font-size: 24px;
+            margin: 0 27px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
     }
 
     .section-3 .subscription {
-        padding: 32px 16px;
+        padding: 32px 24px;
     }
 
-
     .section-3 h3 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .section-3 .col-1 h3 {
+        margin-right: 3px;
     }
 
     .section-3 .col-1,
@@ -872,14 +1075,14 @@
     }
 
     .section-3 .bonus a {
-        font-size: 16px;
-        width: 230px;
+        width: 226px;
     }
 
     .section-3 .col-2 .btn {
-        width: 303px;
+        width: 299px;
         padding: 18px 0;
-        margin: 24px auto 0;
+        margin: 24px 0 0 -8px;
+        text-align: center;
     }
 
     .section-3 .banner.flex {
@@ -1155,6 +1358,285 @@
     .sidebar-menu__contacts .social img {
         width: 32px;
         height: 32px;
+    }
+
+    /*
+    *****
+    *calc
+    *****
+    */
+
+
+
+    // .section-2 .col {
+    //     width: calc(100% - 48px);
+    //     padding: 24px;
+    //     margin-bottom: 24px;
+    // }
+
+    .subscription-section {
+
+        padding: 32px 20px;
+
+        .cols {
+            flex-direction: column;
+            align-content: center;
+
+            .col {
+                padding: 32px 24px;
+                width: calc(100% - 48px);
+
+                .number {
+                    font-size: 24px;
+                    padding-bottom: 24px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .note {
+                    margin-top: 113px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .calc-section {
+
+        h2 {
+            margin: 0 -11px;
+            padding-bottom: 30px;
+        }
+
+
+        .calc-block {
+            .calculator {
+                padding: 32px 16px;
+                margin-bottom: 32px;
+                margin-right: 0;
+                width: 335px;
+
+                .discount-sticker {
+                    display: none;
+                }
+
+                .type-cleaning {
+                    margin-top: 0;
+                }
+
+                h3 {
+                    margin-top: 14px;
+                    margin-bottom: 24px;
+                }
+
+                .nav-switch {
+                    width: 275px;
+                    padding: 3px 3px;
+                    margin: -4px 0;
+
+                    a {
+                        width: 162px;
+                        padding: 16px 0;
+                        margin: 0 2px;
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    margin-left: 45px;
+                }
+
+                /**
+            *Checkbox
+            */
+
+                .additional {
+                    margin: 40px 0;
+                }
+
+                .option {
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                .check {
+                    font-size: 16px;
+                }
+
+                .check-box {
+                    width: 1.5em;
+                    height: 1.5em;
+                    background-size: cover;
+                }
+
+                .check-input:checked+.check-box {
+                    background-size: cover;
+                }
+
+                /**
+            *KeyButton
+            */
+                .deliv-key-title {
+                    margin-bottom: 16px;
+                }
+
+                .key-block {
+                    margin-bottom: 40px;
+                    width: 303px;
+                    flex-direction: column;
+                    align-content: center;
+                }
+
+                .key-button-1,
+                .key-button-2 {
+                    width: 299px;
+                    height: 78px;
+                    font-size: 16px;
+                    margin: 8px;
+
+                    img {
+                        margin: 16px 16px 16px 20px;
+                    }
+
+                }
+
+                /**
+            *Client-data
+            */
+                .name {
+                    display: block;
+
+                    .client-first-name {
+                        width: 100%;
+                    }
+
+                }
+
+                .client-data,
+                .key-receive,
+                .key-back {
+
+                    input {
+                        font-size: 16px;
+                    }
+
+                    h3 {
+                        margin-top: 24px;
+                    }
+
+
+                    .date,
+                    .time {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+
+                        .date-info,
+                        .time-info {
+                            width: 70%;
+                            font-size: 16px;
+                        }
+
+                        #inputDate,
+                        #inputTime {
+                            width: 30%;
+                            font-size: 16px;
+                        }
+                    }
+
+                    #inputLocale {
+                        height: fit-content;
+                        padding-right: 20px;
+
+                    }
+
+                    #inputLocale::-webkit-input-placeholder {
+                        font-size: 16px;
+                        width: 200px;
+
+
+                    }
+
+                    small {
+                        font-size: 14px;
+                    }
+
+                    #inputComment {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                    }
+                }
+
+                .client-data::-webkit-input-placeholder {
+                    font-size: 18px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    color: rgba(27, 27, 27, 0.7);
+                }
+
+                .approve {
+                    width: 84%;
+
+                    .check-box {
+                        margin: 6px 0 6px -3em;
+                    }
+                }
+
+                .payment-block {
+                    width: 84%;
+                    color: #4D1299;
+                    font-size: 18px;
+                    margin-top: 60px;
+
+                    b {
+                        width: 58%;
+                    }
+
+                    .crCard-button {
+                        width: 317px;
+                        border: 2px solid #4D1299;
+                        height: 82px;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        justify-content: space-evenly;
+                    }
+
+                    .cash-button {
+                        width: 194px;
+                        border: 2px solid #4D1299;
+                        height: 82px;
+                        border-radius: 50px;
+                        cursor: pointer;
+                        justify-content: space-evenly;
+
+                        img {
+                            margin: 18px;
+                        }
+                    }
+
+                    .crCard-button.active,
+                    .crCard-button:hover,
+                    .cash-button.active,
+                    .cash-button:hover {
+                        background: #4D1299;
+                        color: #FFF;
+                        transition: all 0.5s ease-out;
+                    }
+                }
+            }
+        }
+
+
     }
 
 
