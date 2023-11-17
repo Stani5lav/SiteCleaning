@@ -73,7 +73,7 @@ function PrintInput() {
 
 plusSquareBtn.onclick = function () {
     sq++;
-    minusSquareBtn.src = "img/home/minus.png";
+    minusSquareBtn.src = "img/calc/minus.png";
 
     PrintInput();
 }
@@ -86,7 +86,7 @@ minusSquareBtn.onclick = function () {
     }
 
     if (sq === 1) {
-        minusSquareBtn.src = "img/home/minus-na.png";
+        minusSquareBtn.src = "img/calc/minus-na.png";
     }
     PrintInput();
 }
@@ -98,7 +98,7 @@ square.oninput = function () {
         PrintInput();
 
         if (sq > 1) {
-            minusSquareBtn.src = "img/home/minus.png";
+            minusSquareBtn.src = "img/calc/minus.png";
         }
         return;
     }

@@ -1763,13 +1763,13 @@ Home page
                 }
 
                 #inputDate::-webkit-calendar-picker-indicator {
-                    background: url(/img/home/calendar.png);
+                    background: url(/img/calc/calendar.png);
                     background-repeat: no-repeat;
                     cursor: pointer;
                 }
 
                 #inputTime::-webkit-calendar-picker-indicator {
-                    background: url(/img/home/clock.png);
+                    background: url(/img/calc/clock.png);
                     background-repeat: no-repeat;
                     cursor: pointer;
                 }
@@ -1784,7 +1784,7 @@ Home page
                 line-height: 24px;
                 transition: height 0.3s;
                 font-family: "Open Sans", sans-serif;
-                background: url(/img/home/location.png);
+                background: url(/img/calc/location.png);
                 background-repeat: no-repeat;
                 background-position: right top;
                 margin-bottom: 5px;
