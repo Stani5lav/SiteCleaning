@@ -34,23 +34,6 @@ btnCloseMenu.onclick = function (e) {
  * 
  */
 
-// let sliderNav = document.querySelectorAll('.slider-nav li');
-
-// for (let i = 0; i < sliderNav.length; i++) {
-//     sliderNav[i].onclick = function (e) {
-//         e.preventDefault();
-//         document.querySelector('.slider-nav li.active').classList.remove('active');
-//         e.target.classList.add('active');
-
-//         let id = e.target.dataset.id;
-
-//         document.querySelector('.slider-item.active').classList.remove('active');
-//         document.querySelector('.slider-item[data-id="' + id + '"]').classList.add('active');
-
-
-//     }
-// }
-
 
 $('.slider-nav li').on('click', function (e) { //(для об'єкту лі) (підключаємо подію (он)) "клік", яка виконує функцію
     e.preventDefault();
@@ -152,42 +135,46 @@ keyButton2.onclick = function () {
 let currentDate = new Date();
 
 let dateString = currentDate.toISOString().slice(0, 10);
+let imputDate = document.getElementById("inputDate");
+imputDate.min = dateString;
 
-// document.getElementById("inputDate").value = dateString;
-document.getElementById("inputDate").min = dateString;
+
+document.querySelectorAll('.date > *').forEach(function (element) {
+    element.addEventListener('click', function (event) {
+        document.querySelector('.date-info').style.display = 'none';
+        document.querySelector('.date-info').setAttribute('rows', '2');
+        imputDate.style.width = '100%';
+        imputDate.style.color = '#1b1b1b';
+
+    });
+});
 
 //*********************      Час        ******************************************** */
 
-// function validateTime() {
-//     var inputTime = document.getElementById('inputTime');
-//     var minTime = '08:00';
-//     var maxTime = '17:00';
 
-//     // Приводим значения к стандартному формату времени
-//     var inputTimeValue = inputTime.value.substring(0, 5);
+document.querySelectorAll('.time > *').forEach(function (element) {
+    element.addEventListener('click', function (event) {
+        document.querySelector('.time-info').style.display = 'none';
+        document.getElementById('inputTime').style.width = '100%';
+        document.getElementById('inputTime').style.color = '#1b1b1b';
 
-//     if (inputTimeValue < minTime) {
-//         inputTime.value = minTime;
-//     } else if (inputTimeValue > maxTime) {
-//         inputTime.value = maxTime;
-//     }
-// }
+    });
+});
 
+//*********************      Адреса        ******************************************** */
+
+
+let inputLocale = document.querySelector('.inputLocale');
+
+inputLocale.addEventListener('click', function (event) {
+    document.querySelector('.inputLocale').innerHTML = '';
+
+});
 
 //*********************      Оплата       ******************************************** */
 
 let crCardButton = document.querySelector('.crCard-button');
 let cashButton = document.querySelector('.cash-button');
-
-crCardButton.onclick = function () {
-    crCardButton.classList.add('active');
-    cashButton.classList.remove('active');
-};
-
-cashButton.onclick = function () {
-    cashButton.classList.add('active');
-    crCardButton.classList.remove('active');
-};
 
 
 //*********************      Додаткові послуги       ******************************************** */

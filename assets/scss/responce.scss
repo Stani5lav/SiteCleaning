@@ -292,7 +292,7 @@
     }
 
     .section-3 p {
-        font-size: 16px !important;
+        font-size: 16px;
     }
 
     .section-3 .pack-title {
@@ -383,34 +383,75 @@
     */
 
     .section-4 {
-        padding: 72px 0;
-        margin: 0 auto;
+        overflow: hidden;
+        padding: 72px 39px;
+        position: relative;
+        margin: 0;
+
+        .container {
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .cols {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 48px 0 56px;
+
+                .col {
+
+                    padding: 28px 24px;
+                    width: 282px;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    img {
+                        width: 108px;
+                        height: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+                .a-kas {
+                    margin-top: -58px;
+                }
+
+                .b-lev {
+                    margin-top: 30px;
+                }
+
+                .y-kra {
+                    margin-top: 30px;
+                    order: 2;
+                }
+
+                .y-voz {
+                    margin-top: -36px;
+                    order: 1;
+                }
+
+                .btns {
+
+                    .btn-facebook,
+                    .btn-google {
+                        font-size: 16px;
+                        padding: 18px 13px;
+                        width: 229px;
+                    }
+                }
+            }
+        }
     }
 
-    .section-4 .cols {
-        column-count: 2;
-        margin-top: 48px;
-        margin-bottom: 56px;
-    }
-
-    .section-4 h2 {
-        font-size: 32px;
-    }
-
-    .section-4 .container .cols .col h3 {
-        font-size: 20px;
-    }
-
-    .section-4 .container .cols .col p {
-        font-size: 16px;
-    }
-
-    .section-4 .btn-google,
-    .section-4 .btn-facebook {
-        font-size: 16px;
-        width: 257px;
-        padding: 16px 4px;
-    }
 
     /**
     SECTION 5
@@ -631,7 +672,7 @@
 
         .subscription {
 
-            margin-bottom: 56px;
+            margin-bottom: 72px;
 
         }
 
@@ -642,7 +683,7 @@
             .col {
                 padding: 32px 24px;
                 margin-bottom: 0;
-                width: calc(100%/2 - 60px);
+                width: 282px;
 
                 .number {
                     font-size: 24px;
@@ -678,7 +719,7 @@
         }
 
         .calc-block {
-            display: block;
+            flex-wrap: wrap;
 
             .calculator {
                 padding: 60px 30px;
@@ -687,14 +728,17 @@
                 width: 640px;
 
                 .discount-sticker {
-                    // position: absolute;
-                    // top: 28%;
-                    // left: 48%;
-                    display: none;
+                    top: 63.5%;
+                    left: 53%;
                 }
 
                 .type-cleaning {
                     font-size: 22px;
+                    margin-top: 0;
+                }
+
+                .nav-switch {
+                    margin-bottom: 30px;
                 }
 
                 h3 {
@@ -707,10 +751,12 @@
 
                 .additional {
                     margin: 40px 0;
+
                 }
 
                 .check {
                     font-size: 16px;
+                    margin-bottom: 1em;
                 }
 
                 .check-box {
@@ -729,6 +775,12 @@
 
                 .key-block {
                     margin-bottom: 40px;
+
+
+                    .key-button-1,
+                    .key-button-2 {
+                        font-size: 16px;
+                    }
                 }
 
 
@@ -743,6 +795,30 @@
                     input {
                         font-size: 16px;
                     }
+
+                    .client-last-name {
+                        width: 336px;
+                    }
+
+                    .date,
+                    .time {
+
+                        .date-info,
+                        .time-info {
+                            width: 43%;
+                            font-size: 16px;
+                        }
+
+                        #inputDate,
+                        #inputTime {
+                            width: 57%;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .inputLocale {
+                        font-size: 16px;
+                    }
                 }
 
                 #inputComment {
@@ -754,7 +830,7 @@
                 }
 
                 .approve {
-                    width: 86%;
+                    width: 88%;
                 }
 
                 .payment-block {
@@ -773,6 +849,7 @@
             }
 
             .calc-display {
+
                 width: 280px;
 
                 .btn {
@@ -783,6 +860,7 @@
                 }
             }
         }
+
 
 
     }
@@ -1140,43 +1218,45 @@
     */
 
     .section-4 {
-        padding: 64px 0;
-    }
+        padding: 64px 20px;
 
-    .section-4 h2 {
-        font-size: 24px;
-    }
+        .container {
 
-    .section-4 .cols {
-        column-count: 1;
-        margin: 0;
-        padding: 0;
-        width: 335px;
-    }
+            h2 {
+                font-size: 24px;
+            }
 
-    .section-4 .col {
-        margin: 12px 0;
-        width: 287px;
-        padding: 24px;
-    }
+            .cols {
+                margin: 10px 0 40px;
 
-    .section-4 .container .cols .col p {
-        margin: 0;
-        width: 287px;
-    }
+                .col {
+                    margin-top: 30px;
+                }
 
-    .section-4 .btns.flex {
-        flex-direction: column;
-        align-items: center;
-    }
+                .b-lev {
+                    margin-top: 30px;
+                }
 
-    .section-4 .btns {
-        margin-top: 40px;
-    }
+                .y-voz {
+                    margin-top: 30px;
+                    order: 1;
+                }
+            }
 
-    .section-4 .btn-google,
-    .section-4 .btn-facebook {
-        margin: 8px auto;
+            .btns {
+
+                flex-wrap: wrap;
+
+
+                .btn-facebook,
+                .btn-google {
+                    font-size: 16px;
+                    padding: 18px 20px;
+                    width: 229px;
+                    margin: 8px 0;
+                }
+            }
+        }
     }
 
     /**
@@ -1378,13 +1458,22 @@
 
         padding: 32px 20px;
 
+        .pack-title {
+            margin-bottom: 40px;
+        }
+
+        .subscription {
+            margin-bottom: 64px;
+        }
+
         .cols {
             flex-direction: column;
             align-content: center;
 
             .col {
                 padding: 32px 24px;
-                width: calc(100% - 48px);
+                width: 287px;
+                margin-bottom: 24px;
 
                 .number {
                     font-size: 24px;
@@ -1396,10 +1485,6 @@
                     margin-bottom: 12px;
                 }
 
-                p {
-                    font-size: 16px;
-                }
-
                 .note {
                     margin-top: 113px;
                     font-size: 14px;
@@ -1409,6 +1494,7 @@
     }
 
     .calc-section {
+        padding-bottom: 382px;
 
         h2 {
             margin: 0 -11px;
@@ -1421,17 +1507,20 @@
                 padding: 32px 16px;
                 margin-bottom: 32px;
                 margin-right: 0;
-                width: 335px;
+                width: 303px;
 
                 .discount-sticker {
-                    display: none;
+                    top: 60.2%;
+                    left: 18%;
                 }
 
                 .type-cleaning {
                     margin-top: 0;
+                    margin-left: 3px;
                 }
 
                 h3 {
+                    margin-right: -3px;
                     margin-top: 14px;
                     margin-bottom: 24px;
                 }
@@ -1458,7 +1547,7 @@
             */
 
                 .additional {
-                    margin: 40px 0;
+                    margin: 40px -8px 40px 0;
                 }
 
                 .option {
@@ -1470,16 +1559,11 @@
 
                 .check {
                     font-size: 16px;
+                    padding-left: 2.5em;
                 }
 
                 .check-box {
-                    width: 1.5em;
-                    height: 1.5em;
-                    background-size: cover;
-                }
-
-                .check-input:checked+.check-box {
-                    background-size: cover;
+                    margin-left: -2.5em;
                 }
 
                 /**
@@ -1496,12 +1580,19 @@
                     align-content: center;
                 }
 
+                .key-button-1 {
+                    margin: 8px 0 16px;
+                }
+
+                .key-button-2 {
+                    margin: 0;
+                }
+
                 .key-button-1,
                 .key-button-2 {
                     width: 299px;
                     height: 78px;
                     font-size: 16px;
-                    margin: 8px;
 
                     img {
                         margin: 16px 16px 16px 20px;
@@ -1515,10 +1606,10 @@
                 .name {
                     display: block;
 
-                    .client-first-name {
+                    .client-first-name,
+                    .client-last-name {
                         width: 100%;
                     }
-
                 }
 
                 .client-data,
@@ -1537,122 +1628,93 @@
                     .date,
                     .time {
                         width: 100%;
-                        margin: 0;
+                        margin-bottom: 24px;
                         padding: 0;
 
                         .date-info,
                         .time-info {
-                            width: 70%;
                             font-size: 16px;
+                            width: 260px;
+
+                        }
+
+                        .date-info {
+                            height: 48px;
                         }
 
                         #inputDate,
                         #inputTime {
-                            width: 30%;
                             font-size: 16px;
                         }
                     }
 
-                    #inputLocale {
-                        height: fit-content;
-                        padding-right: 20px;
+                    .inputLocale {
+                        height: 48px;
 
                     }
 
-                    #inputLocale::-webkit-input-placeholder {
-                        font-size: 16px;
-                        width: 200px;
 
-
-                    }
-
-                    small {
-                        font-size: 14px;
-                    }
-
-                    #inputComment {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                        font-size: 16px;
-                    }
                 }
 
-                .client-data::-webkit-input-placeholder {
-                    font-size: 18px;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: 600;
-                    color: rgba(27, 27, 27, 0.7);
+                small {
+                    font-size: 14px;
+                }
+
+                #inputComment {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
                 }
 
                 .approve {
-                    width: 84%;
-
-                    .check-box {
-                        margin: 6px 0 6px -3em;
-                    }
+                    width: 96%;
+                    margin-bottom: 40px;
                 }
 
                 .payment-block {
-                    width: 84%;
-                    color: #4D1299;
-                    font-size: 18px;
-                    margin-top: 60px;
-
-                    b {
-                        width: 58%;
-                    }
+                    width: 100%;
+                    flex-direction: column;
+                    margin-top: 0;
 
                     .crCard-button {
-                        width: 317px;
-                        border: 2px solid #4D1299;
-                        height: 82px;
-                        border-radius: 50px;
-                        cursor: pointer;
+                        width: 299px;
                         justify-content: space-evenly;
-                    }
-
-                    .cash-button {
-                        width: 194px;
-                        border: 2px solid #4D1299;
-                        height: 82px;
-                        border-radius: 50px;
-                        cursor: pointer;
-                        justify-content: space-evenly;
+                        margin-top: 0;
+                        margin-bottom: 16px;
 
                         img {
-                            margin: 18px;
+                            width: 65px;
                         }
                     }
 
-                    .crCard-button.active,
-                    .crCard-button:hover,
-                    .cash-button.active,
-                    .cash-button:hover {
-                        background: #4D1299;
-                        color: #FFF;
-                        transition: all 0.5s ease-out;
+                    .cash-button {
+                        width: 299px;
+                        justify-content: center;
+
+                        img {
+                            margin: 8px;
+                        }
+
+                        b {
+                            width: fit-content;
+                            margin: 8px;
+                        }
+                    }
+
+                    input[type="radio"] {
+                        margin: 0;
                     }
                 }
             }
+
+
         }
 
-
+        .calc-display {
+            width: 335px;
+            padding: 40px 27.5px;
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
